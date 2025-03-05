@@ -1,0 +1,177 @@
+/* Reset default styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Clean, readable font for body */
+    text-align: center;
+    background-color: #ffebee; /* Light pink background for a festive feel */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #ff4444; /* Bright red for Isaac’s favorite color */
+    padding: 20px 0;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive; /* Playful, cool font for headings */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+nav a:hover {
+    color: #ffeb3b; /* Bright yellow for hover effect */
+}
+
+/* Main content styling */
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2, h3 {
+    font-family: 'Pacifico', cursive;
+    color: #ff4444; /* Red for headings to match Isaac’s favorite color */
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Gallery styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Ensures images fit nicely without distortion */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; /* Animation for hover */
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Slightly enlarge images on hover */
+}
+
+/* Video styling */
+video {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Quiz styling */
+.quiz-question {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.quiz-question p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.quiz-question label {
+    display: block;
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+#submit-button {
+    background-color: #ff4444; /* Red button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Result page styling */
+.result-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.result-container h1 {
+    color: #ff4444;
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+}
+
+.result-container p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 1rem;
+    }
+
+    .gallery img {
+        width: 150px;
+        height: 150px;
+    }
+
+    video {
+        width: 100%;
+    }
+}
+
+/* Add Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap');
